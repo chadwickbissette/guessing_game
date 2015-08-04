@@ -1,22 +1,32 @@
 <script>
-var reply, shortCutoff, mediumCutoff, bestCutoff;
+var reply, shortCutOff, cutOff2, mediumCutOff, cutOff3, bestCutOff;
 
-userReply = prompt("On a scale of 1 to 10 how would you rate your lunch experience?")
+userReply = prompt("On a scale of 1 to 10 how would you rate your lunch experience?");
 
-shortCutoff = 4;
-mediumCutoff = 7;
-bestCutoff =10;
+shortCutOff = 2;
+cutOff2 = 4;
+mediumCutOff = 6;
+cutOff3 = 8;
+bestCutOff =10;
 
-if (userReply < shortCutoff) {
+if (userReply < shortCutOff) {
   message = "Ohhh, sorry it didn't work out-- at least you're still breathing.";
-} else if (userReply <= mediumCutoff) {
+} else if (userReply <= cutOff2) {
+  message = "I am sorry to hear that, better luck tomorrow!";
+} else if (userReply <= mediumCutOff) {
 message = "Not bad-- could have been worse!";
-} else if (userReply <= bestCutoff){
-message = "That sounds like a pretty good lunch!";
+} else if (userReply <= cutOff3) {
+  message = "That sounds like a pretty good lunch!";
+} else if (userReply <= bestCutOff){
+message = "That sounds like one of the best lunches of your life!";
 } else {
   message = "Sorry-- that's not on the scale of 1 to 10!";
 }
 
 alert(message);
 
+
+//Changed variable names to fit the camelCase format, also added new
 </script>
+
+
