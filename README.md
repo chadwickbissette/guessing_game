@@ -3,3 +3,5 @@
 Not a very impressive game, I admit, but very relevant to my very hectic lunch!
 
 Thanks for letting me change the README. I'll try your game when I don't have Alex breathing down my neck, ha.
+
+I added an object constructor to it.-Jason
